@@ -49,11 +49,12 @@ const getName = () => {
 }
 const getFocus = () => {
     if (localStorage.getItem('name') === null) {
-        focus.textContent = '[Enter Name]';
+        focus.textContent = '[Enter Focus]';
     } else {
         focus.textContent = localStorage.getItem('focus')
     }
 }
+
 function setName(e) {
     if (e.type === 'keypress') {
         if (e.keyCode === 13) {
@@ -65,6 +66,7 @@ function setName(e) {
 
     }
 }
+
 function setFocus(e) {
     if (e.type === 'keypress') {
         if (e.keyCode === 13) {
